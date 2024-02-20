@@ -35,8 +35,8 @@ class LivreController extends Controller
             'prix' => $request->input('prix'),
             'qtestock' => $request->input('qtestock'),
             'couverture' => $request->input('couverture'),
-            'specialite_id' => $request->input('specialite_id'),
-            'editeur_id' => $request->input('editeur_id')
+            'specialite_id' => $request->input('specialite'),
+            'editeur_id' => $request->input('maised')
         ]);
         $livre->save();
         // On ajoute les auteurs associés au livre en utilisant attach

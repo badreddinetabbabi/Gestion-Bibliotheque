@@ -12,16 +12,16 @@ protected $fillable = [
 'prix',
 'qtestock',
 'couverture',
-'specialite_id',
-'editeur_id'
+'specialite',
+'maised'
 ];
 public function editeur()
 {
-return $this->belongsTo(Editeur::class,'editeur_id');
+return $this->belongsTo(Editeur::class,'maised');
 }
 public function specialite()
 {
-return $this->belongsTo(Specialite::class,'specialite_id');
+return $this->belongsTo(Specialite::class,'specialite');
 }
 public function auteurs()
 {
